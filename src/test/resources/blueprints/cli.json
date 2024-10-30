@@ -1,0 +1,20 @@
+{
+  "name": "cli",
+  "connectionType": "CLI",
+  "template": {
+    "cli-topology:device-type": "*",
+    "cli-topology:keepalive-timeout": 60,
+    "cli-topology:keepalive-initial-delay": 10,
+    "cli-topology:max-connection-attempts-install": 3,
+    "uniconfig-config:install-uniconfig-node-enabled": false,
+    "cli-topology:device-version": "*",
+    "cli-topology:max-connection-attempts": 6,
+    "cli-topology:transport-type": "ssh",
+    "cli-topology:keepalive-delay": 10,
+    "cli-topology:parsing-engine": "one-line-parser",
+    "cli-topology:host": "{{<STRING> host}}",
+    "cli-topology:port": "{{<NUMBER> port}}",
+    "cli-topology:username": "{{<STRING> username}}",
+    "cli-topology:password": "{{<STRING> password}}"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "netconf",
+  "connectionType": "NETCONF",
+  "template": {
+    "netconf-node-topology:max-reconnection-attempts": 3,
+    "netconf-node-topology:tcp-only": false,
+    "netconf-node-topology:max-connection-attempts": 3,
+    "netconf-node-topology:dry-run-journal-size": 100,
+    "netconf-node-topology:enabled-notifications": false,
+    "netconf-node-topology:sleep-factor": 1,
+    "uniconfig-config:install-uniconfig-node-enabled": false,
+    "netconf-node-topology:between-attempts-timeout-millis": 10000,
+    "netconf-node-topology:keepalive-delay": 10,
+    "netconf-node-topology:default-request-timeout-millis": 1200000,
+    "netconf-node-topology:connection-timeout-millis": 30000,
+    "uniconfig-config:uniconfig-native-enabled": false,
+    "netconf-node-topology:host": "{{<STRING> host}}",
+    "netconf-node-topology:port": "{{<NUMBER> port}}",
+    "netconf-node-topology:username": "{{<STRING> username}}",
+    "netconf-node-topology:password": "{{<STRING> password}}"
+  }
+}

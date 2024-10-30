@@ -1,0 +1,22 @@
+{
+  "name": "gnmi",
+  "connectionType": "GNMI",
+  "template": {
+    "uniconfig-config:uniconfig-native-enabled": false,
+    "uniconfig-config:install-uniconfig-node-enabled": false,
+    "gnmi-topology:connection-parameters": {
+      "gnmi-topology:connection-type": "PLAINTEXT",
+      "gnmi-topology:host": "{{<STRING> host}}",
+      "gnmi-topology:port": "{{<NUMBER> port}}",
+      "gnmi-topology:credentials": {
+        "gnmi-topology:username": "{{<STRING> username}}",
+        "gnmi-topology:password": "{{<STRING> password}}"
+      }
+    },
+    "gnmi-topology:extensions-parameters": {
+      "gnmi-force-capabilities:force-cached-capabilities": [
+        null
+      ]
+    }
+  }
+}

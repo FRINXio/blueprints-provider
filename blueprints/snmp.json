@@ -1,0 +1,16 @@
+{
+  "name": "snmp",
+  "connectionType": "SNMP",
+  "template": {
+    "snmp-topology:host": "{{<STRING> host}}",
+    "snmp-topology:port": "{{<NUMBER> port}}",
+    "snmp-topology:transport-type": "udp",
+    "snmp-topology:snmp-version": "v2c",
+    "snmp-topology:no-auth-no-priv": {
+      "snmp-topology:community-string": "{{<STRING> community_string}}"
+    },
+    "snmp-topology:connection-retries": 1,
+    "snmp-topology:request-timeout": 15000,
+    "snmp-topology:mib-repository": "default"
+  }
+}
